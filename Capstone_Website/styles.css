@@ -1,0 +1,85 @@
+.navBar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  nav{
+      width: 60vw;
+      height: 7vw;
+      display:block;
+      float: right;
+    }
+  .navBar{
+      overflow: hidden;
+      background-color: rgb(120, 142, 163);
+  }
+
+  .navBar a {
+    float:left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgba(86, 158, 154, 0.596);
+    color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    background-color: #00579e;
+    color: white;
+  }
+
+  header img{
+    background-repeat: no-repeat;
+    margin-top: -40px;
+    height: 12vw;
+    width: auto;
+    background-color: darkgoldenrod;
+  }
+
+  .container {
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  #home-grid-container {
+      background-color: aqua;
+      width: 90vw;
+      height: 70vw;
+      margin: 0 5vw 0 5vw;
+  }
+
+#home-grid-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+  }
+
+.home-grid-item {
+    padding-left:5vw;
+    padding-top: 5vw;
+    
+}
+
+.home-grid-item p{
+    font-size: 20px;
+}
+
+  #homeBody img{
+      left: 0px;
+      image-orientation: turn;
+  }
+
+  
