@@ -1,3 +1,6 @@
+body {
+  background-color: aqua;
+}
 .navBar input[type=text] {
     float: right;
     padding: 6px;
@@ -16,6 +19,8 @@
   .navBar{
       overflow: hidden;
       background-color: rgb(120, 142, 163);
+      margin-left: auto;
+      margin-right: auto;
   }
 
   .navBar a {
@@ -55,7 +60,6 @@
   }
 
   #home-grid-container {
-      background-color: aqua;
       width: 90vw;
       height: 70vw;
       margin: 0 5vw 0 5vw;
@@ -68,8 +72,18 @@
   }
 
 .home-grid-item {
-    padding-left:5vw;
-    padding-top: 5vw;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        
+        max-height: 380px;
+        min-width: 960px;
+        max-width: 2048px;
+    padding-left:2vw;
+    padding-top: 2vw;
     
 }
 
@@ -80,6 +94,11 @@
   #homeBody img{
       left: 0px;
       image-orientation: turn;
+  }
+  
+  #imgID {
+    float: right;
+    margin: 0 0 0 15px;
   }
 
   
