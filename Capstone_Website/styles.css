@@ -1,5 +1,5 @@
 body {
-  background-color: aqua;
+  background-color: lightblue;
 }
 .navBar input[type=text] {
     float: right;
@@ -18,6 +18,7 @@ body {
     }
   .navBar{
       overflow: hidden;
+      border-radius: 15px;
       background-color: rgb(120, 142, 163);
       margin-left: auto;
       margin-right: auto;
@@ -34,14 +35,11 @@ body {
     font-family: sans-serif;
   }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: rgba(86, 158, 154, 0.596);
-    color: black;
+  .navBar a:hover {
+    color: darkblue;
   }
   
-  /* Style the "active" element to highlight the current page */
-  .topnav a.active {
+  .navBar a.active {
     background-color: #00579e;
     color: white;
   }
@@ -60,15 +58,12 @@ body {
   }
 
   #home-grid-container {
+    padding-top: 5px;
       width: 90vw;
       height: 70vw;
       margin: 0 5vw 0 5vw;
-  }
-
-#home-grid-container{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-
   }
 
 .home-grid-item {
@@ -98,6 +93,11 @@ body {
     float: right;
     margin: 0 0 0 15px;
     width: 50%;
+  }
+
+  footer {
+    background-color: gray;
+    padding-left: 15%;
   }
 
   
