@@ -1,5 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Righteous&family=Ropa+Sans&display=swap');
 body {
-  background-color: lightblue;
+  margin: 0 25px 0 25px;
+	padding: 0;
+	background-color: #4f89c0;
 }
 .navBar input[type=text] {
     float: right;
@@ -56,6 +60,19 @@ body {
       justify-content: flex-start;
   }
 
+  h1 {
+    font-family: 'Philosopher', sans-serif;
+    color: aliceblue;
+  }
+
+  h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  p{
+    font-family: 'Ropa Sans', sans-serif;
+  }
+
   #home-grid-container {
     padding-top: 5px;
       width: 90vw;
@@ -63,6 +80,7 @@ body {
       margin: 0 5vw 0 5vw;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
   }
 
 .home-grid-item {
@@ -94,9 +112,32 @@ body {
     width: 50%;
   }
 
+
+
   footer {
-    background-color: gray;
+    background-color: rgb(190, 190, 190);
     padding-left: 15%;
+    margin-bottom: 20px;
+    border-radius: 15%;
   }
 
+
   
+  #plugins-home-display{
+    width: 75vw;
+    height: 30vh;
+    display: grid
+  }
+
+  .plugin-list-box {
+    background: white;
+    border-radius: 12px;
+    padding: 8px;
+    overflow: hidden;
+    width: 23vw;
+    height: 50%;
+
+  }
+
+
+
