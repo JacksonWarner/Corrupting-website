@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Righteous&family=Ropa+Sans&display=swap');
+
 body {
   margin: 0 25px 0 25px;
 	padding: 0;
@@ -92,8 +93,7 @@ body {
         width: fit-content;
 
     padding-left: 2vw;
-    padding-top: 2vw;
-    
+    padding-top: 2vw; 
 }
 
 .home-grid-item p{
@@ -111,8 +111,6 @@ body {
     width: 50%;
   }
 
-
-
   footer {
     background-color: rgb(190, 190, 190);
     padding-left: 15%;
@@ -120,8 +118,6 @@ body {
     border-radius: 15%;
   }
 
-
-  
   #plugins-home-display{
     width: 75vw;
     height: 30vh;
@@ -135,8 +131,4 @@ body {
     overflow: hidden;
     width: 23vw;
     height: 50%;
-
   }
-
-
-
