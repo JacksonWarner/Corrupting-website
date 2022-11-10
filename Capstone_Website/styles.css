@@ -3,7 +3,19 @@
 body {
   margin: 0 25px 0 25px;
 	padding: 0;
-	background-color: #4f89c0;
+background: rgb(90,205,245);
+background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%, rgba(6,28,45,1) 100%);
+
+}
+
+#gif{
+  width: 90vw;
+  height: 40vh;
+  background-size: contain;
+background-image: url(media/CubeGif.gif) ;
+background-repeat: no-repeat;
+float: right;
+margin-left: 75vw;
 }
 .navBar input[type=text] {
     float: right;
@@ -109,14 +121,29 @@ body {
     float: right;
     margin: 0 0 0 15px;
     width: 50%;
+    padding-right: 10px;
   }
 
   footer {
-    background-color: rgb(190, 190, 190);
-    padding-left: 15%;
-    margin-bottom: 20px;
-    border-radius: 15%;
+    background-color: rgba(190, 190, 190, 0);
+    margin-left: 22%;
+    height: 20vh;
+    width: 55vw;
+    border-radius: 0%;
+    
+    outline-style: double;
+    outline-color: black;
+    outline-width:5px;
   }
+
+  #footerContent{
+    text-align: center;
+  }
+
+  #footerContent h1 {
+    text-shadow: 1.5px 1.5px white ;
+  }
+
 
   #plugins-home-display{
     width: 75vw;
@@ -132,6 +159,7 @@ body {
     overflow: hidden;
     width: 23vw;
     height: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .fa {
@@ -152,4 +180,3 @@ body {
     background: #55ACEE;
     color: white;
   }
-  
