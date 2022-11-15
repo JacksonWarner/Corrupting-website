@@ -130,7 +130,6 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
 
   footer {
     background-color: rgba(190, 190, 190, 0);
-    margin-left: 22%;
     height: fit-content;
     width: fit-content + 50%;
     outline-style: double;
