@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Righteous&family=Ropa+Sans&display=swap');
+
+body {
+  margin: 0 25px 0 25px;
+	padding: 0;
+  background-image: url(media/CubeGif.gif);
+background: rgb(90,205,245);
+background-repeat:none;
+background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%, rgba(6,28,45,1) 100%);
+
+}
+
+.hero{
+  width: 90vw;
+  height: 60vh;
+  background-size:40%;
+  background-image: url(media/CubeGif.gif) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+
+}
+
+.navBar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  nav{
+      width: 80vw;
+      height: 6vw;
+      display:block;
+      float: right;
+    }
+
+
+  .navBar{
+      overflow: hidden;
+      border-radius: 15px;
+      background-color: rgb(120, 142, 163);
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .navBar a {
+    float:left;
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: sans-serif;
+  }
+  
+  .navBar a:hover {
+    color: darkblue;
+  }
+  
+  .navBar a.active {
+    background-color: #00579e;
+    color: white;
+  }
+
+  
+
+  header img{
+    background-repeat: no-repeat;
+    margin-top: -40px;
+    height: 12vw;
+    width: auto;
+  }
+
+  .container {
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  h1 {
+    font-family: 'Philosopher', sans-serif;
+    color: aliceblue;
+  }
+
+  h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  p{
+    font-family: 'Ropa Sans', sans-serif;
+  }
+
+  #home-grid-container {
+    padding-top: 5px;
+      width: 90vw;
+      height: auto;
+      margin: 0 5vw 0 5vw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+
+.home-grid-item {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  height:fit-content;
+  width: fit-content;
+  padding-left: 2vw;
+  padding-top: 2vw; 
+}
+
+.home-grid-item p{
+    font-size: 20px;
+}
+  
+  #imgID {
+    float: right;
+    margin: 0 0 0 15px;
+    width: 50%;
+    padding-bottom:15px;
+    padding-right: 15px;
+  }
+
+  footer {
+    background-color: rgba(190, 190, 190, 0);
+    height: fit-content;
+    width: fit-content + 50%;
+    outline-style: double;
+    outline-color: black;
+    outline-width:5px;
+  }
+
+  #footerContent{
+    text-align: center;
+  }
+
+  #footerContent h1 {
+    text-shadow: 1.5px 1.5px white ;
+  }
+
+
+  #plugins-home-display{
+    width: 75vw;
+    height: 30vh;
+    display: grid;
+  }
+
+  .plugin-list-box {
+    background: white;
+    border-radius: 12px;
+    padding: 7px;
+    overflow: hidden;
+    width: 23vw;
+    height: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  #terms{
+    animation-delay: 6s;
+    animation-duration: 5s;
+  }
