@@ -7,16 +7,6 @@ background: rgb(90,205,245);
 background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%, rgba(6,28,45,1) 100%);
 
 }
-
-#gif{
-  width: 90vw;
-  height: 40vh;
-  background-size: contain;
-background-image: url(media/CubeGif.gif) ;
-background-repeat: no-repeat;
-float: right;
-margin-left: 75vw;
-}
 .navBar input[type=text] {
     float: right;
     padding: 6px;
@@ -27,8 +17,8 @@ margin-left: 75vw;
   }
   
   nav{
-      width: 60vw;
-      height: 7vw;
+      width: 80vw;
+      height: 6vw;
       display:block;
       float: right;
     }
@@ -44,7 +34,6 @@ margin-left: 75vw;
     float:left;
     display: block;
     color: black;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 24px;
@@ -103,7 +92,6 @@ margin-left: 75vw;
         margin-right: auto;
         height:fit-content;
         width: fit-content;
-
     padding-left: 2vw;
     padding-top: 2vw; 
 }
@@ -111,26 +99,19 @@ margin-left: 75vw;
 .home-grid-item p{
     font-size: 20px;
 }
-
-  #homeBody img{
-      left: 0px;
-      image-orientation: turn;
-  }
   
   #imgID {
     float: right;
     margin: 0 0 0 15px;
     width: 50%;
-    padding-right: 10px;
+    padding-right: 15px;
+    padding-bottom: 15px;
   }
 
   footer {
     background-color: rgba(190, 190, 190, 0);
-    margin-left: 22%;
-    height: 20vh;
-    width: 55vw;
-    border-radius: 0%;
-    
+    height: fit-content;
+    width: fit-content + 50%;
     outline-style: double;
     outline-color: black;
     outline-width:5px;
@@ -144,18 +125,10 @@ margin-left: 75vw;
     text-shadow: 1.5px 1.5px white ;
   }
 
-
-  #plugins-home-display{
-    width: 75vw;
-    height: 30vh;
-    display: grid
-    
-  }
-
   .plugin-list-box {
     background: white;
     border-radius: 12px;
-    padding: 8px;
+    padding: 7px;
     overflow: hidden;
     width: 23vw;
     height: 50%;
