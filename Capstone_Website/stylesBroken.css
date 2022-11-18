@@ -6,7 +6,7 @@ body {
   background-image: url(media/CubeGif.gif);
 background: rgb(90,205,245);
 background-repeat:none;
-background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%, rgba(6,28,45,1) 100%);
+background: white;
 
 }
 
@@ -27,7 +27,7 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
     border: none;
     margin-top: 8px;
     margin-right: 16px;
-    font-size: 17px;
+    font-size: 50px;
   }
   
   nav{
@@ -44,6 +44,7 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
       background-color: rgb(120, 142, 163);
       margin-left: auto;
       margin-right: auto;
+      height: 110px;
   }
 
   .navBar a {
@@ -90,6 +91,7 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
 
   p{
     font-family: 'Ropa Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.171);
   }
 
   #home-grid-container {
@@ -105,13 +107,11 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
 .home-grid-item {
   background-color: white;
   border: 2px solid black;
-  border-radius: 25px;
+  
   margin-left: auto;
   margin-right: auto;
   height:fit-content;
   width: fit-content;
-  padding-left: 2vw;
-  padding-top: 2vw; 
 }
 
 .home-grid-item p{
@@ -167,16 +167,6 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
-  }
-
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
   }
 
   #terms{
