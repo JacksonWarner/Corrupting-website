@@ -179,4 +179,26 @@ background: white;
     100%{
         display:none;
     }
-}
+  }
+
+  @keyframes animate__wobble {
+    0%   {left: 300px; top: -50px;}
+    25%  {left: 70px; top: 90px;}
+    50%  {left: 120px; top: -20px;}
+    75%  {left: -40px; top: -30px;}
+    100% {left: 0px; top: 0px;}
+  }
+
+  #gInMessaging{
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    animation-duration: 2s;
+    /*-webkit-animation-name: animate_wobble;
+    animation-name: slideOutLeft;
+    -webkit-animation-duration: 5s;
+   animation-duration: 5s;*/
+  }
+
+
+ 
