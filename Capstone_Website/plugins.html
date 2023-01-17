@@ -2,13 +2,14 @@
 <html>
     <head>
 
-        <link rel="stylesheet" href="stylesBroken.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/5a1c76ad19.js" crossorigin="anonymous"></script>
 
     </head>
 
     <wrapper>
     <header class="container">
-        <a href="plugins.html"><img class="logo" src="" alt="Company Logo"></a>
+        <a href="index.html"><img class="logo" src="media/fffLogo.jpeg" alt="Company Logo"></a>
     
         <nav class="navBar">
             <a href="404.html">News</a>
@@ -23,31 +24,54 @@
     </header>
 
     <body>
-        <div id="home-grid-container">
-
-            <div class="home-grid-item" id="home-grid-item-1">
-                <a href="PuzzleColor.html">Color</a>
+        <button id="testButton">Hi</button>
+        <div id="pCard">
+            
+            <h2>Plugins</h2>
+            <ol id="pList">
+                <li style="z-index:12;">
+                    <div id="textP" class="plugin">
+                    <div id="textStatus" class="status"><i id="pTextIcon" class="fa-solid fa-x"></i></div>
+                        Text
                 </div>
-
-                <br>
-
-            <div class="home-grid-item" id="home-grid-item-2">
-                <a href="PuzzleText.html">Text</a>
+                </li>
+                <li>
+                    <div id="textP" class="plugin">
+                    
+                    <div id="serverStatus" class="status"><i id="pServerIcon" class="fa-solid fa-check"></i></div>
+                Server    
                 </div>
+                </li>
 
-                <br>
-
-                <div class="home-grid-item" id="home-grid-item-3">
-                    <a href="PuzzleImage.html">Images</a>
+                <li>
+                    <div id="textP" class="plugin">
+                        
+                        <div id="imagesStatus" class="status"><i id="pImagesIcon" class="fa-solid fa-x"></i></div>
+                        Images
                     </div>
-    
-                    <br>
+                </li>
 
-                    <div class="home-grid-item" id="home-grid-item-4">
-                        <a href="PuzzleStyle.html">Style</a>
-                        </div>
+                <li>
+                    <div id="textP" class="plugin">
+                        <div id="cookiesStatus" class="status"><i id="pCookiesIcon" class="fa-solid fa-check"></i></div>
+                        Cookies
+                    </div>
+                </li>
+
+                <li>
+                    <div id="textP" class="plugin">
+                        
+                        <div id="stylesStatus" class="status"><i id="pTextIcon" class="fa-solid fa-x"></i></div>
+                        Styles
+                    </div>
+                </li>
+            </ol>
+   
+      
 
         </div>
+        <script type="text/javascript" src="./app.js"></script>
+
 
     </body>
 
