@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Righteous&family=Ropa+Sans&display=swap');
 
+*{
+  padding:0;
+  margin:0;
+}
 body {
   margin: 0 25px 0 25px;
 	padding: 0;
@@ -130,11 +134,15 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
 
   footer {
     background-color: rgba(190, 190, 190, 0);
-    height: fit-content;
-    width: fit-content + 50%;
+    width: 80%;
     outline-style: double;
     outline-color: black;
     outline-width:5px;
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+    margin-bottom: 1em;
+    left: 10%;
   }
 
   #footerContent{
@@ -181,3 +189,56 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
     background: #55ACEE;
     color: white;
   }
+
+  #pCard {
+    width: 30vw;
+    margin: auto;
+    margin-top: 5vw;
+    height: auto;
+    background-color: rgb(182, 182, 182);
+    border-radius: 20%;
+    box-shadow: 7px 8px 6px 1px rgba(0, 0, 255, .2);
+    
+  }
+
+  #pCard h2{
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  #pList{
+    list-style-type: none;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 7vw;
+  }
+
+  .plugin{
+    margin-bottom:2vh ;
+    font-size: 2.25vw;
+  }
+  ol li {
+    display: block; /* or flex */
+  }
+  .status {
+    display: inline-block; /* or flex */
+  }
+
+  #pList i{
+    width: 10vw;
+    right:0;
+    font-size:xx-large;
+    padding-right: none;
+    text-align-last: left;
+  }
+
+  .fa-x{
+    color: rgb(235, 235, 235);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(206,72,72,1) 0%, rgba(182,182,182,1) 90%);
+  }
+
+  .fa-check{
+    color: rgb(235, 235, 235);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,176,0,1) 0%, rgba(182,182,182,1) 90%, rgba(182,182,182,1) 100%);
+  }
+
