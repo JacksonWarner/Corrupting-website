@@ -245,14 +245,49 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
   }
 
   svg {
-    position: absolute;
-    top: 0;
-    left: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
-    display: block;
-    background-color: #0e4166;
+		box-sizing: border-box;
+		display: block;
+		background-color: #0e4166;
     background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
     z-index: -1;
 	}
+
+  #recoverBtn {
+    background-color: rgba(255, 0, 0, 0.491);
+    height: 10vh;
+    width: 25vw;
+    border-color: rgba(0, 0, 255, 0.249);
+    background-image:url("./media/RECOVER.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:60%;
+    border-radius: 38%;
+    margin-left:auto ;
+    margin-right: auto;
+    display: flex;
+    margin-top: 1vh;
+  }
+
+  #recoverLogo{
+    width: 25vw;
+    height: auto;
+    margin-left: 37vw;
+    margin-top: 5vh;
+  }
+
+  #recoverText {
+    text-align:center;
+    color: aliceblue;
+   
+  }
+
+  #recoverBtnDiv{
+    width: 25vw;
+    height: auto;
+    margin: auto;
+  }
