@@ -4,6 +4,10 @@
   padding:0;
   margin:0;
 }
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 25px 0 25px;
 	padding: 0;
@@ -14,6 +18,9 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
 
 }
 
+.logo{
+  mix-blend-mode: color-burn;
+}
 .hero{
   width: 90vw;
   height: 60vh;
@@ -214,11 +221,12 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
   }
 
   .plugin{
-    margin-bottom:2vh ;
+    margin-bottom:2vh;
     font-size: 2.25vw;
   }
   ol li {
     display: block; /* or flex */
+    background-color: #00000000;
   }
   .status {
     display: inline-block; /* or flex */
@@ -291,3 +299,215 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
     height: auto;
     margin: auto;
   }
+
+
+.modal-button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-weight: initial;}
+
+  .modal-button :hover{
+    cursor: pointer;
+  }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(205, 38, 38); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 0;
+  border: 3px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: rgb(255, 255, 255);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color:rgb(90,205,245);
+  color: rgb(0, 0, 0);
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: rgb(90,205,245);
+  color: rgb(0, 0, 0);
+}
+
+table {
+  border: #000000;
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  td {
+  padding: 1em;
+  border: #000000;
+  border-style: solid;
+  text-align: left;
+  border-width: 2px;
+  }
+  th {
+  padding: 1em;
+  border: #000000;
+  border-style: solid;
+  text-align: center;
+  border-width: 2px;
+  }
+
+  .imagesBtnStyles {
+    background-color: transparent;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    font-weight: 100;
+  }
+
+  .imagesAnchors {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+  }
+
+  .imagesAnchors:hover{
+    cursor:default;
+  }
+
+  .textBtnStyles {
+    background-color: transparent;
+    text-decoration: none;
+    color: #ffb2b2;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    font-weight: 100; 
+  }
+
+
+  
+
+  .popup-box{
+    display: none;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+  
+  .popup-inner{
+    max-width: 300px;
+    min-height: 160px;
+    background: white;
+    border-radius: 25px;
+    padding: 15px;
+    margin: auto;
+    top: 25%;
+    position: relative;
+  }
+  
+  
+  
+  .popup-msg{
+    font-weight: bold;
+    color: black;
+    padding: 20px 20px 0 20px;
+  }
+  
+  .next-step-btn{
+    margin:20px auto 0;
+  background: linear-gradient(rgb(204,0,0), rgb(130,0,0));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#015eab', endColorstr='#10276b');
+    border: none !important;
+    padding: 10px 40px !important;
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .transparent-layer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.3;
+  overflow: hidden;
+  }
+
+  .next-step-btn:hover{
+    background: green;
+  }
+
+  #introVid {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(205, 38, 38); /* Fallback color */
+    background-color: rgba(191, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
