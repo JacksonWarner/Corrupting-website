@@ -11,6 +11,10 @@ var introVidModal = document.getElementById("introVid");
 var introVidBtn = document.getElementById("vidButton");
 var span = document.getElementsByClassName("close")[0];
 
+//variables for rewards
+const textReward = document.getElementById("textReward");
+const imgReward = document.getElementById("imgReward");
+
 // Get the button that opens the modal
 var btn = document.querySelectorAll("button.modal-button");
 
@@ -31,16 +35,18 @@ const result = document.getElementById("result");
 
 let recoverProtocol = false;
 
+
 setTimeout("showIt()", 4050); // after 4.05 seconds
 
 
 document.querySelector('#recoverBtn').disabled = true;
 
 window.onload=function(){
-    //openVidModal();
+   // openVidModal();
 
     testBtn.addEventListener("click", function() {
         textIcon.className = "fa-solid fa-check";
+        textReward.style.display = "block";
         console.log(textIcon.className);
         if(recoverProtocol == false){
             if(textIcon.className == "fa-solid fa-check"){
@@ -60,6 +66,7 @@ window.onload=function(){
 
         imagesBtn.addEventListener("click", function() {
         imagesIcon.className = "fa-solid fa-check";
+        imgReward.style.display= "block";
         console.log(imagesIcon.className);
         if(recoverProtocol == false){
             if(textIcon.className == "fa-solid fa-check"){
@@ -142,7 +149,7 @@ document.getElementById("startBtn").onclick = function () {
 for (var i = 0; i < spans.length; i++) {
     spans[i].onclick = function() {
        for (var index in modals) {
-         if (typeof vidModal.style !== 'undefined') vidModal.style.display = "none";    
+         if (typeof introVidModal.style !== 'undefined') introVidModal.style.display = "none";    
        }
     }
    }
@@ -150,7 +157,7 @@ for (var i = 0; i < spans.length; i++) {
    window.onclick = function(event) {
        if (event.target.classList.contains('modal')) {
         for (var index in modals) {
-         if (typeof vidModal.style !== 'undefined') vidModal.style.display = "none";    
+         if (typeof introVidModal.style !== 'undefined') introVidModal.style.display = "none";    
         }
        }
    }
