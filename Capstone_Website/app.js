@@ -37,7 +37,7 @@ setTimeout("showIt()", 4050); // after 4.05 seconds
 document.querySelector('#recoverBtn').disabled = true;
 
 window.onload=function(){
-    openVidModal();
+    //openVidModal();
 
     testBtn.addEventListener("click", function() {
         textIcon.className = "fa-solid fa-check";
