@@ -14,7 +14,7 @@ var span = document.getElementsByClassName("close")[0];
 //variables for rewards
 const textReward = document.getElementById("textReward");
 const imgReward = document.getElementById("imgReward");
-
+const stylesReward = document.getElementById("stylesReward");
 // Get the button that opens the modal
 var btn = document.querySelectorAll("button.modal-button");
 
@@ -34,7 +34,15 @@ const buttons = document.getElementsByTagName("button");
 const result = document.getElementById("result");
 
 let recoverProtocol = false;
+let passcodeSubmit = false;
+const passcode = "3048";
 
+//variables for passcode
+const inputs = document.querySelectorAll("input");
+const codeBlock = document.getElementById("code-block");
+const code = document.getElementById("code");
+const form = document.querySelector("form");
+document.querySelector('#stylesButton').disabled = true;
 
 setTimeout("showIt()", 4050); // after 4.05 seconds
 
@@ -86,6 +94,7 @@ window.onload=function(){
 
     stylesBtn.addEventListener("click", function() {
         stylesIcon.className = "fa-solid fa-check";
+        stylesReward.style.display = "block";
         console.log(stylesIcon.className);
         if(recoverProtocol == false){
             if(textIcon.className == "fa-solid fa-check"){
@@ -181,7 +190,31 @@ for (var i = 0; i < spans.length; i++) {
 
   }
 
+  inputs.forEach((input, key) => {
+    if (key !== 0) {
+      input.addEventListener("click", function () {
+        inputs[0].focus();
+      });
+    }
+    input.addEventListener("keyup", function () {
+      if (input.value) {
+        if (key === 3) {
+          const userCode = [...inputs].map((input) => input.value).join("");
+          console.log(userCode);
+          //userCode is the 4 digit pin put together
+          if(userCode == passcode){
+            passcodeSubmit = true;
+            stylesBtn.style.backgroundColor = "green";
+            document.querySelector('#stylesButton').disabled = false;
 
+          }
+        } else {
+          inputs[key + 1].focus();
+        }
+      }
+    });
+  });
+  
 
 
 
