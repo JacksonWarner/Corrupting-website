@@ -18,7 +18,6 @@
             <a href="404.html">Messages</a>
             <a href="404.html">Help</a>
             <a href="plugins.html">Plugins</a>
-            <input type="text" placeholder="Search...">
         </nav>
 
     </header>
@@ -209,8 +208,28 @@
                       </div>
                       <div class="modal-body">
                         <p>Styles Puzzle</p>
+                        <div id="shapeContainer">
+                            <img class="shape" src="/media/triangle.png">
+                            <img class="shape" src="/media/circle.png">
+                            <img class="shape" src="/media/square.png">
+                            <img class="shape" src="/media/octagon.png">
+                        </div>
+
+                        <h3 style="justify-content: center; text-align: center;">Please enter passcode:</h3>
+                        <div id="passcodeContainer">
+                            <form>
+                                <input class="passcodeChar" type="text" maxlength=1 />
+                                <input class="passcodeChar" type="text" maxlength=1 />
+                                <input class="passcodeChar" type="text" maxlength=1 />
+                                <input class="passcodeChar" type="text" maxlength=1 />
+                              </form>
+                        </div>
                       <button id="stylesButton">styles</button>
                       </div>
+                      <div id="stylesReward">
+                        <h3>Reward Unlocked:</h3>
+                        <img id="stylesRewardImg" src="media/stylesReward.png">
+                    </div>
                       <div class="modal-footer">
                         <h3>M Footer</h3>
                       </div>
@@ -225,7 +244,7 @@
 
 
         <div style="justify-content: center;">
-            <a href="indexFinal.html" >
+            <a href="/indexFinal.html" >
         <!--<img id="recoverLogo" src="media/RECOVER.png" alt="Recover Protocol">-->
         <button id="recoverBtn"><div id="recoverBtnDiv"></div></button>
         </a>
