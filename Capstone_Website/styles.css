@@ -18,6 +18,8 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
 
 }
 
+
+
 .logo{
   mix-blend-mode: color-burn;
 }
@@ -508,4 +510,71 @@ justify-content: center;
   display: none;
   width: 50%;
   justify-content: center;
+}
+
+#stylesReward{
+  display: none;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+#shapeContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.shape{
+  width:8vw;
+  height: auto;
+}
+
+#passcodeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+input {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 3rem;
+}
+.special {
+  margin-top: 2rem;
+  font-size: 2rem;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  i {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#stylesButton{
+  background-color: #5d5d5d;
+  border-color: rgba(255, 255, 255, 0.249);
+  margin-left:auto ;
+  margin-right: auto;
+  display: flex;
+  margin-top: 1vh;
 }
