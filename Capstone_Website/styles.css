@@ -542,6 +542,10 @@ justify-content: center;
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+#passcodeContainer i{
+  font-size:medium;
+}
+
 form {
   display: flex;
   justify-content: center;
@@ -572,7 +576,7 @@ input {
 
 .special {
   margin-top: 2rem;
-  font-size: 12px;
+  font-size: 1px;
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
@@ -587,11 +591,9 @@ input {
 }
 #resetBtn {
   cursor: pointer;
-  display: block;
-  align-items: center;
-  text-align: center;
   order: 2;
-  left: 50%;
+  margin: auto;
+  width: 50%;
 }
 
 #code-block{
