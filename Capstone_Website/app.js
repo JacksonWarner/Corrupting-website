@@ -200,6 +200,8 @@ for (var i = 0; i < spans.length; i++) {
       if (input.value) {
         if (key === 3) {
           const userCode = [...inputs].map((input) => input.value).join("");
+          codeBlock.classList.remove("hidden");
+
           console.log(userCode);
           //userCode is the 4 digit pin put together
           if(userCode == passcode){
@@ -214,6 +216,13 @@ for (var i = 0; i < spans.length; i++) {
       }
     });
   });
+
+const reset = () => {
+  form.reset();
+  codeBlock.classList.add("hidden");
+  code.innerText = "";
+};
+  
   
 
 
