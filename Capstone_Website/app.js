@@ -42,9 +42,10 @@ const inputs = document.querySelectorAll("input");
 const codeBlock = document.getElementById("code-block");
 const code = document.getElementById("code");
 const form = document.querySelector("form");
+setTimeout("showIt()", 4050); // after 4.05 seconds
+
 document.querySelector('#stylesButton').disabled = true;
 
-setTimeout("showIt()", 4050); // after 4.05 seconds
 
 
 document.querySelector('#recoverBtn').disabled = true;
