@@ -10,6 +10,10 @@ var uxStarted = null;
 var introVidModal = document.getElementById("introVid");
 var introVidBtn = document.getElementById("vidButton");
 var span = document.getElementsByClassName("close")[0];
+let imgHeader = document.getElementById("imgHeader");
+let textHeader = document.getElementById("textHeader");
+let stylesHeader = document.getElementById("stylesHeader");
+
 
 //variables for rewards
 const textReward = document.getElementById("textReward");
@@ -56,6 +60,7 @@ window.onload=function(){
     testBtn.addEventListener("click", function() {
         textIcon.className = "fa-solid fa-check";
         textReward.style.display = "block";
+        textHeader.style.backgroundColor = 'green';
         console.log(textIcon.className);
         if(recoverProtocol == false){
             if(textIcon.className == "fa-solid fa-check"){
@@ -76,6 +81,7 @@ window.onload=function(){
         imagesBtn.addEventListener("click", function() {
         imagesIcon.className = "fa-solid fa-check";
         imgReward.style.display= "block";
+        imgHeader.style.backgroundColor = "green";
         console.log(imagesIcon.className);
         if(recoverProtocol == false){
             if(textIcon.className == "fa-solid fa-check"){
@@ -83,8 +89,9 @@ window.onload=function(){
                     if(stylesIcon.className == "fa-solid fa-check"){
                         recoverProtocol = true;
                         recoverBtn.style.backgroundColor = "green";
+
                         console.log("recoverProtocol");
-                        document.querySelector('#recoverBtn').disabled = false; 
+                        document.querySelector('#recoverBtn').disabled = false;
                     } 
                 } 
             }
@@ -96,6 +103,7 @@ window.onload=function(){
     stylesBtn.addEventListener("click", function() {
         stylesIcon.className = "fa-solid fa-check";
         stylesReward.style.display = "block";
+        stylesHeader.style.backgroundColor = 'green';
         console.log(stylesIcon.className);
         if(recoverProtocol == false){
             if(textIcon.className == "fa-solid fa-check"){
@@ -105,7 +113,6 @@ window.onload=function(){
                         recoverBtn.style.backgroundColor = "green";
                         console.log("recoverProtocol");
                         document.querySelector('#recoverBtn').disabled = false;
-
                     } 
                 } 
             }
