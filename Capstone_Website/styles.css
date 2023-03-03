@@ -371,15 +371,16 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
 
 .modal-header {
   padding: 2px 16px;
-  background-color:rgb(90,205,245);
   color: rgb(0, 0, 0);
+  background-color: red;
+
 }
 
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: rgb(90,205,245);
+  background-color: red;
   color: rgb(0, 0, 0);
 }
 
@@ -600,3 +601,10 @@ input {
   align-items: center;
   text-align: center;
 }
+
+#search{
+  width: 15%;
+  height:40%
+}
+
+
