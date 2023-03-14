@@ -358,7 +358,7 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
 .close {
   color: rgb(255, 255, 255);
   float: right;
-  font-size: 28px;
+  font-size: 48px;
   font-weight: bold;
 }
 
@@ -607,4 +607,23 @@ input {
   height:40%
 }
 
+.hiddenText{
+  font-size: 17px;
+  font-weight:normal;
+}
 
+.hintBtn{
+  border: none;
+  position: relative;
+  background-color:#00000000;
+  text-align: center;
+  margin: 10px;
+  left: 3vw;
+}
+
+.hintRevealedtext{
+  width: 15vw;
+  height: auto;
+  margin: 10px;
+  border: 2px solid black;
+}
