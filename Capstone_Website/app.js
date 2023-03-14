@@ -240,6 +240,17 @@ const reset = () => {
     document.getElementById("hid").style.visibility = "visible";
   }
   
+  function showTextHint(){
+    document.getElementById("textHint").style.display="flex";
+  }
+
+  function showImgHint(){
+    document.getElementById("imgHint").style.display="flex";
+  }
+
+  function showStyleHint(){
+    document.getElementById("styleHint").style.display="flex";
+  }
 
   function openModal(modal) {
     if (modal == null) return
