@@ -223,9 +223,12 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
   }
 
   .plugin{
+    color: green;
     margin-bottom:2vh;
     font-size: 2.25vw;
   }
+
+
   ol li {
     display: block; /* or flex */
     background-color: #00000000;
@@ -307,10 +310,35 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
   background-color: transparent;
   outline: none;
   border: none;
-  font-weight: initial;}
+  font-weight: initial;} 
+
+  #textP {
+    color: red;
+  }
+
+  #textP:hover {
+    color: white;
+  }
+
+  #imagesP{
+    color: red;
+  }
+
+  #imagesP:hover {
+    color: white;
+  }
+  #stylesP{
+    color: red;
+  }
+
+
+  #stylesP:hover {
+    color: white;
+  }
 
   .modal-button :hover{
     cursor: pointer;
+ 
   }
 
 /* The Modal (background) */
@@ -507,11 +535,6 @@ table {
 justify-content: center;
 }
 
-#imgReward{
-  display: none;
-  width: 50%;
-  justify-content: center;
-}
 
 #stylesReward{
   display: none;
