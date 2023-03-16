@@ -13,6 +13,10 @@ var span = document.getElementsByClassName("close")[0];
 let imgHeader = document.getElementById("imgHeader");
 let textHeader = document.getElementById("textHeader");
 let stylesHeader = document.getElementById("stylesHeader");
+var imagesPuzzleSlot = document.getElementById("imageRewardSlot");
+let textP = document.getElementById("textP");
+let imagesP = document.getElementById("imagesP");
+let stylesP = document.getElementById("stylesP");
 
 
 //variables for rewards
@@ -61,6 +65,8 @@ window.onload=function(){
         textIcon.className = "fa-solid fa-check";
         textReward.style.display = "block";
         textHeader.style.backgroundColor = 'green';
+        textP.style.color="green";
+
         console.log(textIcon.className);
         if(recoverProtocol == false){
             if(textIcon.className == "fa-solid fa-check"){
@@ -80,8 +86,9 @@ window.onload=function(){
 
         imagesBtn.addEventListener("click", function() {
         imagesIcon.className = "fa-solid fa-check";
-        imgReward.style.display= "block";
         imgHeader.style.backgroundColor = "green";
+        document.getElementById("imageRewardSlot").src="../media/imgReward.png";
+        imagesP.style.color="green";
         console.log(imagesIcon.className);
         if(recoverProtocol == false){
             if(textIcon.className == "fa-solid fa-check"){
@@ -104,6 +111,7 @@ window.onload=function(){
         stylesIcon.className = "fa-solid fa-check";
         stylesReward.style.display = "block";
         stylesHeader.style.backgroundColor = 'green';
+        stylesP.style.color="green";
         console.log(stylesIcon.className);
         if(recoverProtocol == false){
             if(textIcon.className == "fa-solid fa-check"){
