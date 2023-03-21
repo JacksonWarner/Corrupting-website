@@ -4,6 +4,10 @@
 
         <link rel="stylesheet" href="styles.css">
         <script src="https://kit.fontawesome.com/5a1c76ad19.js" crossorigin="anonymous"></script>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     </head>
 
@@ -23,9 +27,14 @@
     </header>
 
     <body>
-        <div id="pCard">
-            
-            <h2 alt>Plugins</h2>
+        <div id="pluginsMainContent">
+        <div id="pCard" class="animate__shakeX">
+                        <section>
+                <div class="hero-container">
+                  <div class="environment"></div>
+                  <h2 class="heros glitch layers" data-text="Plugins"><span>Plugins</span></h2>
+                </div>
+              </section>
             <ol id="pList">
                
                     <button  class="modal-button"  href="#myModal1" id="textPluginListButton">
@@ -87,7 +96,7 @@
                                 </p>
                                 <br>
                                 <button class="hintBtn" onclick="showTextHint()"><i class="fa-solid fa-circle-question" style="padding: 0%;"><span style="font-size: 17px; padding-left: 2px;">H3LP3R</span></i></button>
-                                <p class="hintRevealedtext" class="hintRevealedtext" id="textHint" style=" display:none; text-align:center; color: #000000">Hey! Those capital letters and that white space look very strange! Maybe you should try looking closely at those!</p>
+                                <p class="hintRevealedtext" class="hintRevealedtext" id="textHint" style=" display:none; text-align:center; color: #000000">Those capital letters look very suspicious, wonder what they mean?</p>
                         
                             
                         <div id="textReward">
@@ -163,7 +172,7 @@
                         </tr>
                         </table>
                         <button class="hintBtn" onclick="showImgHint()"><i class="fa-solid fa-circle-question" style="padding: 0%;"><span style="font-size: 17px; padding-left: 2px;">H3LP3R</span></i></button>
-                        <p id="imgHint" class="hintRevealedtext" style="text-align:center; display:none; color: #000000">Clicking randomly won’t get you very far here! Try hovering over an image! See what happens!</p>
+                        <p id="imgHint" class="hintRevealedtext" style="text-align:center; display:none; color: #000000">The images hold the key, maybe something will show up when you hover over them?</p>
                       </div>
 
                     </div>
@@ -219,7 +228,7 @@
                       <button id="stylesButton">Submit</button>
                       </div>
                       <button class="hintBtn" onclick="showStyleHint()"><i class="fa-solid fa-circle-question" style="padding: 0%;"><span style="font-size: 17px; padding-left: 2px;">H3LP3R</span></i></button>
-                      <p id="styleHint" class="hintRevealedtext" style="display:none; text-align:center; color: #000000">The order of these shapes must hold some importance! The sides of the shapes must be important, too!</p>
+                      <p id="styleHint" class="hintRevealedtext" style="display:none; text-align:center; color: #000000">The order of these shapes must hold some importance. How could you get a password from shapes?</p>
                       <div id="stylesReward">
                         <h3>Reward Unlocked:</h3>
                         <img id="stylesRewardImg" src="media/stylesReward.png">
@@ -245,10 +254,12 @@
 
         <div id="result"></div>
 
+    </div>
 
         <script type="text/javascript" src="./app.js"></script>
         
 
+        <div class="noise"></div>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
 		<defs>
