@@ -278,3 +278,4 @@ const reset = () => {
 const buttonPressed = e => { 
   result.innerHTML = `ID of <em>${e.target.innerHTML}</em> is <strong>${e.currentTarget.id}</strong>`;
 }
+
