@@ -9,13 +9,14 @@
 }
 
 body {
-  margin: 0 25px 0 25px;
-	padding: 0;
-  background-image: url(media/CubeGif.gif);
+  position: relative;
+height: 100vh;
+margin: 0 25px 0 25px;
+padding-bottom: 17vh;
+background-image: url(media/CubeGif.gif);
 background: rgb(90,205,245);
 background-repeat:none;
 background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%, rgba(6,28,45,1) 100%);
-
 }
 
 
@@ -41,6 +42,7 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
+    width: 15vw;
   }
   
   nav{
@@ -141,20 +143,18 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
     padding-right: 15px;
   }
 
-  footer {
-    background-color: rgba(190, 190, 190, 0);
-    width: 80%;
-    outline-style: double;
-    outline-color: black;
-    outline-width:5px;
+  #footer {
     position: absolute;
+    width: 96vw;
     bottom: 0;
-    height: 2.5rem;
-    margin-bottom: 1em;
-    left: 10%;
+    left: 0vw;
+    padding: 1rem;
+    text-align: center;
+    box-sizing:unset;
   }
 
   #footerContent{
+    background-color: #c5d8ff;
     text-align: center;
   }
 
@@ -176,7 +176,7 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
     padding: 7px;
     overflow: hidden;
     width: 23vw;
-    height: 50%;
+    height: 80%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
@@ -1220,4 +1220,15 @@ left: -80px;
   position: absolute;
   left: 35vw;
   z-index: 900;
+}
+
+
+#statPhrase{
+  position:relative;
+  margin: 20px;
+  left: 30vw;
+  font-size: larger;
+  width: 40vw;
+  height: auto;
+  text-align: center;
 }
