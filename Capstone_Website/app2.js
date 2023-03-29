@@ -2,6 +2,7 @@ var introVidModal = document.getElementById("introVid");
 var introVidBtn = document.getElementById("vidButton");
 var span = document.getElementsByClassName("close")[0];
 var btn = document.querySelectorAll("button.modal-button");
+const video = document.getElementById("introVideo");
 
 // All page modals
 var modals = document.querySelectorAll('.modal');
@@ -25,12 +26,15 @@ window.onload=function(){
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
     introVidModal.style.display = "none";
+    video.pause();
   }
   
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == introVidModal) {
       introVidModal.style.display = "none";
+      video.pause();
+      console.log("hello");
     }
   }
 
