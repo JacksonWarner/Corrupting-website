@@ -124,6 +124,8 @@ background: white;
     width: 50%;
     padding-bottom:15px;
     padding-right: 15px;
+    filter: invert(75%);
+    filter: blur(30%);
   }
 
   footer {
@@ -169,6 +171,24 @@ background: white;
     border-radius: 100%;
   }
 
+  #hinge1{
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+  }
+
+  #hinge2{
+    animation-delay: 3.4s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards; 
+  }
+
+  #hinge1{
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+  }
+
   #terms{
     animation-delay: 6s;
     animation-duration: 5s;
@@ -212,6 +232,10 @@ background: white;
   }
 
   #vidButton{
+    font-size: large;
+    margin-top: 10px;
+    width: 15vw;
+    height: 5vh;
     background-color: rgb(130, 130, 255);
     outline: none;
     border: none;
@@ -220,6 +244,7 @@ background: white;
   
    #vidButton:hover{
       cursor: pointer;
+      background-color: #46d079;
     }
 
     .close {
@@ -292,4 +317,21 @@ background: white;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    background-color:rgba(255, 130, 130, 0.607) ;
+  }
+}
+
+#introVideo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
