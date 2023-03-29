@@ -16,7 +16,7 @@ padding-bottom: 17vh;
 background-image: url(media/CubeGif.gif);
 background: rgb(90,205,245);
 background-repeat:none;
-background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%, rgba(6,28,45,1) 100%);
+background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgb(86, 96, 181) 36%, rgba(205, 213, 219, 0.712) 100%);
 }
 
 
@@ -183,7 +183,7 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgba(86,165,181,1) 36%
   .fa {
     padding: 15px;
     font-size: 30px;
-    width: 20px;
+    width: 45px;
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
@@ -1224,11 +1224,42 @@ left: -80px;
 
 
 #statPhrase{
-  position:relative;
   margin: 20px;
-  left: 30vw;
   font-size: larger;
-  width: 40vw;
+  width: 30vw;
   height: auto;
   text-align: center;
+  order: 2;
+  padding-top: 55px;
+}
+
+#stat{
+  position: relative;
+  width: 60vw;
+  left: 20vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1vw;
+  justify-content: start;
+  margin-bottom: 30px;
+}
+
+#computerIMG{
+  display:block;
+  width: 23vw;
+  height: auto;
+  margin-right:0px ;
+  order: 0;
+}
+
+.statGridItem{
+  margin: 0;
+  display: flex;
+  max-width: 40vw;
+}
+
+#heroText{
+  width: 75vw;
+  font-size: larger;
 }
