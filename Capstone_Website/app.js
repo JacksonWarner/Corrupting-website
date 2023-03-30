@@ -87,7 +87,7 @@ window.onload=function(){
         imagesBtn.addEventListener("click", function() {
         imagesIcon.className = "fa-solid fa-check";
         imgHeader.style.backgroundColor = "green";
-        document.getElementById("imageRewardSlot").src="../media/imgReward.png";
+        document.getElementById("imageRewardSlot").src="./media/imgReward.png";
         imagesP.style.color="green";
         console.log(imagesIcon.className);
         if(recoverProtocol == false){
@@ -279,3 +279,14 @@ const buttonPressed = e => {
   result.innerHTML = `ID of <em>${e.target.innerHTML}</em> is <strong>${e.currentTarget.id}</strong>`;
 }
 
+function pageRedirect(){
+  var delay = 7000; // time in milliseconds
+
+  // Display message
+  document.getElementById("loader").style.visibility= "visible";
+
+  setTimeout(function(){
+      window.location = "./indexFinal.html";
+  },delay);
+
+}
