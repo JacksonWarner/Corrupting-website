@@ -27,6 +27,17 @@
     </header>
 
     <body>
+        <div id="loader">
+        <h2 id="loaderText">Recover Protocol Activated:</h2>
+        <h4 style="color: rgb(255, 255, 255); display: flex; margin-left: 10px; text-align: center;">Please wait while website is recovered...</h4>
+        <div class="loader"></div>
+
+        <div class="progress-loader">
+            <div class="progress"></div>
+        </div>
+        </div>
+
+
         <div id="pluginsMainContent">
         <div id="pCard" class="animate__shakeX">
                         <section>
@@ -98,10 +109,12 @@
                                 <button class="hintBtn" onclick="showTextHint()"><i class="fa-solid fa-circle-question" style="padding: 0%;"><span style="font-size: 17px; padding-left: 2px;">H3LP3R</span></i></button>
                                 <p class="hintRevealedtext" class="hintRevealedtext" id="textHint" style=" display:none; text-align:center; color: #000000">Those capital letters look very suspicious, wonder what they mean?</p>
                         
-                            
-                        <div id="textReward">
+                        
+                        <div class="reward" id="textReward">
+                            <div class="rewardContent">
                             <h3>Reward Unlocked:</h3>
                             <img id="textRewardImg" src="media/textReward.png">
+                        </div>
                         </div>
                         </div>
                     </div>
@@ -229,9 +242,11 @@
                       </div>
                       <button class="hintBtn" onclick="showStyleHint()"><i class="fa-solid fa-circle-question" style="padding: 0%;"><span style="font-size: 17px; padding-left: 2px;">H3LP3R</span></i></button>
                       <p id="styleHint" class="hintRevealedtext" style="display:none; text-align:center; color: #000000">The order of these shapes must hold some importance. How could you get a password from shapes?</p>
-                      <div id="stylesReward">
+                      <div class="reward" id="stylesReward">
+                          <div class="rewardContent">
                         <h3>Reward Unlocked:</h3>
                         <img id="stylesRewardImg" src="media/stylesReward.png">
+                    </div>
                     </div>
                     </div>
                   
@@ -244,9 +259,9 @@
 
 
         <div style="justify-content: center;">
-            <a href="/indexFinal.html" >
+            <a  >
         <!--<img id="recoverLogo" src="media/RECOVER.png" alt="Recover Protocol">-->
-        <button id="recoverBtn"><div id="recoverBtnDiv"></div></button>
+        <button onclick='pageRedirect();' id="recoverBtn"><div id="recoverBtnDiv"></div></button>
         </a>
         <h3 id="recoverText">All plugins must be active to run Recover Protocol</h3>
         </div>
