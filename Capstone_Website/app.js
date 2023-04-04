@@ -51,6 +51,7 @@ const codeBlock = document.getElementById("code-block");
 const code = document.getElementById("code");
 const form = document.querySelector("form");
 setTimeout("showIt()", 4050); // after 4.05 seconds
+setTimeout("showOutro()",500);
 
 document.querySelector('#stylesButton').disabled = true;
 
@@ -74,6 +75,7 @@ window.onload=function(){
                     if(stylesIcon.className == "fa-solid fa-check"){
                         recoverProtocol = true;
                         recoverBtn.style.backgroundColor = "green";
+                        recoverBtn.style.boxShadow = "rgba(250, 240, 230, 1)";
                         console.log("recoverProtocol");
                         document.querySelector('#recoverBtn').disabled = false;
                     } 
@@ -96,7 +98,7 @@ window.onload=function(){
                     if(stylesIcon.className == "fa-solid fa-check"){
                         recoverProtocol = true;
                         recoverBtn.style.backgroundColor = "green";
-
+                        recoverBtn.style.boxShadow = "rgba(250, 240, 230, 1)";
                         console.log("recoverProtocol");
                         document.querySelector('#recoverBtn').disabled = false;
                     } 
@@ -119,6 +121,7 @@ window.onload=function(){
                     if(stylesIcon.className == "fa-solid fa-check"){
                         recoverProtocol = true;
                         recoverBtn.style.backgroundColor = "green";
+                        recoverBtn.style.boxShadow = "rgba(250, 240, 230, 1)";
                         console.log("recoverProtocol");
                         document.querySelector('#recoverBtn').disabled = false;
                     } 
@@ -247,7 +250,7 @@ const reset = () => {
   function showIt() {
     document.getElementById("hid").style.visibility = "visible";
   }
-  
+
   function showTextHint(){
     document.getElementById("textHint").style.display="flex";
   }
@@ -272,6 +275,14 @@ const reset = () => {
     overlay.classList.remove('active')
   }
 
+  function showOutro(){
+    document.getElementById("outroVid").style.visibility = "visible";
+  }
+  
+  function hideOutro(){
+    document.getElementById("outroVid").style.visibility = "hidden";
+    document.getElementById("outroVideo").pause();
+  }
 
 
 
