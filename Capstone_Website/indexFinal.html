@@ -1,4 +1,4 @@
-<!--this will be the start page that is "fixed" which will then give the user a pop-up button to start-->
+ <!--this will be the start page that is "fixed" which will then give the user a pop-up button to start-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +9,7 @@
         <script src="https://kit.fontawesome.com/a90f89465a.js" crossorigin="anonymous"></script>
     </head>
 
-    <wrapper>
+    <wrapper id="finalWrapper">
     <header class="container">
     <a href="indexFixed.html"><img class="logo" src="media/fffLogo.jpeg"></a>
     
@@ -28,6 +28,16 @@
     <body>
         
 
+        <div class="popup-box" id="outroVid" style="display: block; visibility: hidden;">
+            <div class="transparent-layer"></div>
+            <div class="popup-inner-outro">
+                <span onclick="hideOutro()" class="close">×</span>
+                <div class="popup-msg">Great Work!</div>
+                <video id="outroVideo" width="400" height="300" controls>
+                    <source src="./media/Capstone intro video.mp4" type="video/mp4">
+                </video>  
+           <button onclick="window.location.href='index.html' " id="startBtn" class="next-step-btn">Backdoor Trigger: Press to start</button></div>
+        </div>
 
         <h1 style="margin-bottom: 2vh;">Feature Future Foundation, Building Features for the Future!</h1>
         <div id="heroText">
