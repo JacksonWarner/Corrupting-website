@@ -127,10 +127,12 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgb(86, 96, 181) 36%, 
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2vh;
   height:fit-content;
   width: fit-content;
   padding-left: 2vw;
-  padding-top: 2vw; 
+  padding-right: 2vw;
+  padding-top: 2vh; 
 }
 
 .home-grid-item p{
@@ -1450,4 +1452,23 @@ left: 0%;
 }
 
 #finalWrapper{
+}
+
+#subtitlesContainer {
+  display:inline-block;
+}
+
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+
+.typed-out{
+  overflow: visible;
+  background-color: #97aab755;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: fit-content;
+  animation: blink .6s infinite;
 }
