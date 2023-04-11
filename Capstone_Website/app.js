@@ -18,7 +18,6 @@ let textP = document.getElementById("textP");
 let imagesP = document.getElementById("imagesP");
 let stylesP = document.getElementById("stylesP");
 
-
 //variables for rewards
 const textReward = document.getElementById("textReward");
 const imgReward = document.getElementById("imgReward");
@@ -131,7 +130,6 @@ window.onload=function(){
             recoverProtocol = false;
         }
     }, false);
-
 
 
 // When the user clicks the button, open the modal
