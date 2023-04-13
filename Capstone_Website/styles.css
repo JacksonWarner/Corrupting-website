@@ -285,7 +285,7 @@ background: linear-gradient(90deg, rgba(90,205,245,1) 0%, rgb(86, 96, 181) 36%, 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size:60%;
-    border-radius: 38%;
+    border-radius: 10px;
     margin-left:auto ;
     margin-right: auto;
     display: flex;
@@ -644,6 +644,7 @@ input {
 .hiddenText{
   font-size: 17px;
   font-weight:normal;
+  text-shadow: -.2px -.2px 0 #ffffff, .2px -.2px 0 #000, -.01px .01px 0 #000, .2px .01px 0 #000;
 }
 
 .hintBtn{
@@ -1451,9 +1452,6 @@ left: 0%;
   position: fixed;
 }
 
-#finalWrapper{
-}
-
 #subtitlesContainer {
   display:inline-block;
 }
@@ -1471,4 +1469,15 @@ left: 0%;
   font-size: 1.6rem;
   width: fit-content;
   animation: blink .6s infinite;
+}
+
+#matrixOverlay{
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 35%;
+  mix-blend-mode: screen;
 }
