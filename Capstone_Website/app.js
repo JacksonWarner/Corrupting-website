@@ -299,3 +299,13 @@ function pageRedirect(){
   },delay);
 
 }
+
+
+function startCorruption(){
+  var delay2 = 3500;
+  document.getElementById("matrixOverlay").style.visibility="visible";
+
+  setTimeout(function(){
+    window.location = "./index.html";
+},delay2);
+}
